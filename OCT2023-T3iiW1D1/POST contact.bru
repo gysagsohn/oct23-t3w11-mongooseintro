@@ -1,0 +1,23 @@
+meta {
+  name: POST contact
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/contacts/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name":"Gy-test2",
+    "address": {
+      "street": "123 test",
+      "suburb": "Sydney",
+      "postcode": "2000",
+      "state": "NSW"
+    }
+  }
+}
